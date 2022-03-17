@@ -1,0 +1,40 @@
+.articles {
+    .body {
+        @include breakpoint-up(large) {
+            display: flex;
+        }
+        div {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+            .text {
+                margin: 0 2rem;
+            }
+        }
+    }
+    padding: 2.5rem;
+    h1 {
+        margin-bottom: 70px;
+    }
+    
+    img {
+        width: 100%;
+        @include breakpoint-up(large) {
+            width: 90%;
+        }
+    }
+    h1, h2, h3, h4, h5 {
+        color: $DarkBlue;
+    }
+    a {
+        text-decoration: none;
+        color: $DarkBlue;
+        transition: color 500ms;
+        &:hover {
+            color: $BrightCyan;
+        }
+    }
+    p, h4 {
+        margin: 0 1rem;
+    }
+}

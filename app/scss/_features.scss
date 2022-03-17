@@ -1,0 +1,22 @@
+.features {
+    @include breakpoint-up(large) {
+        display: flex;
+        margin-top: 50px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 2.5rem;
+        h1 {
+            color: $DarkBlue;
+        }
+        p {
+            font-size: 1.1em;
+        }
+    }
+   
+}
